@@ -5,19 +5,30 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .puzzle {
   max-width: 900px;
 }
 
 .character-selection-modal {
   width: 220px;
-  background-color: gainsboro;
-  color: #282828;
+  color: gainsboro;
+  background-color: #282828;
   border-radius: 5px;
+  position: absolute;
+}
+
+.character-selection-radius {
+  border-radius: 25px;
+  border: solid limegreen 2px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  box-shadow: 0 0 15px 1px #00ff00;
+}
+
+.modal-x-button {
+  position: absolute;
+  left: 8px;
+  top: 0px;
+  cursor: pointer;
 }
